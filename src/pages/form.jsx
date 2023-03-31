@@ -5,7 +5,7 @@ import { Widget } from "@typeform/embed-react";
 const Form = () => {
   return (
     <Container>
-      <Widget id="Eesj1xGc" style={{ width: "100%", height: "700px" }} />
+      <Widget id="D72yRZbV" style={{ width: "100%", height: "700px" }} />
     </Container>
   );
 };
