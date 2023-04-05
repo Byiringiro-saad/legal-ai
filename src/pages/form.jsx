@@ -1,16 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-import { Widget } from "@typeform/embed-react";
+import { Outlet } from "react-router";
 
 const Form = () => {
   return (
     <Container>
-      <Widget id="D72yRZbV" style={{ width: "100%", height: "700px" }} />
+      <Outlet />
     </Container>
   );
 };
 
 const Container = styled.div`
+  padding: 0 20px;
+
   @media only screen and (min-width: 1200px) {
     width: 1200px;
   }

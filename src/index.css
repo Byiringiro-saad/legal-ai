@@ -3,6 +3,8 @@
 :root {
   --blue: #4169e1;
   --white: #ffffff;
+  --black: #474747;
+  --gray: #f0f0f0;
 }
 
 * {

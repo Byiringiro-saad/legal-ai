@@ -22,6 +22,7 @@ const Container = styled.div`
 
   p {
     font-size: 1.2rem;
+    color: var(--black);
 
     span {
       font-weight: 700;
