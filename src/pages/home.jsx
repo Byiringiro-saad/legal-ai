@@ -9,6 +9,9 @@ import { TbArrowsMaximize, TbArrowDownRight } from "react-icons/tb";
 import hero from "../assets/hero.png";
 import coding from "../assets/coding.jpg";
 
+// components
+import Footer from "../components/footer";
+
 const Home = () => {
   return (
     <Container>
@@ -184,6 +187,7 @@ const Home = () => {
           <p>Join the Waitlist</p>
         </div>
       </div>
+      <Footer />
     </Container>
   );
 };
