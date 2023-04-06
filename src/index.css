@@ -4,7 +4,10 @@
   --blue: #4169e1;
   --white: #ffffff;
   --black: #474747;
+  --green: #22c55e;
   --gray: #f0f0f0;
+  --tw-gradient-to: rgb(30 64 175 / 0);
+  --tw-gradient-stops: var(--blue), var(--tw-gradient-to);
 }
 
 * {
