@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router";
 
 // icons
 import { CiMoneyBill } from "react-icons/ci";
@@ -10,6 +11,12 @@ import { BiDollarCircle, BiTimeFive } from "react-icons/bi";
 // images
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const goToProduct = () => {
+    navigate("/form");
+  };
+
   return (
     <Container>
       <div className="hero">
@@ -19,9 +26,9 @@ const Home = () => {
             Just help us with few key inputs and will help you decide the case
             outcomes by analysing similar cases using our state of art AI.
           </p>
-          <div className="button">
+          <div className="button" onClick={goToProduct}>
             <BsRocketTakeoffFill className="icon" />
-            <p>Sign up for Beta Access</p>
+            <p>Try the product</p>
           </div>
         </div>
         <div className="image">
@@ -41,9 +48,9 @@ const Home = () => {
             learning algorithms to predict the likely outcome of consumer cases,
             empowering consumers to make more informed decisions.
           </p>
-          <div className="button">
+          <div className="button" onClick={goToProduct}>
             <BsRocketTakeoffFill className="icon" />
-            <p>Sign up for Beta Access</p>
+            <p>Try the product</p>
           </div>
         </div>
         <div className="content">
@@ -158,9 +165,9 @@ const Home = () => {
           Get the future of legal AI - Predict case outcomes, generate
           documents, and win more cases with Faisala.
         </p>
-        <div className="button">
+        <div className="button" onClick={goToProduct}>
           <BsRocketTakeoffFill className="icon" />
-          <p>Sign up for Beta Access</p>
+          <p>Try the product</p>
         </div>
       </div>
     </Container>
@@ -178,7 +185,7 @@ const Container = styled.div`
     height: auto;
     display: flex;
     padding: 70px 20px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 80px 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -279,7 +286,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 60px 0;
+    margin: 0 0 100px 0;
 
     @media only screen and (min-width: 1200px) {
       width: 1200px;

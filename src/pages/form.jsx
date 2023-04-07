@@ -5,24 +5,31 @@ import { Outlet } from "react-router";
 const Form = () => {
   return (
     <Container>
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
     </Container>
   );
 };
 
 const Container = styled.div`
+  width: 100%;
   height: auto;
   display: flex;
-  padding: 50px 20px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 50px 0;
 
-  @media only screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  .content {
+    height: auto;
 
-  @media only screen and (max-width: 1200px) {
-    width: 95%;
+    @media only screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      width: 95%;
+    }
   }
 `;
 
