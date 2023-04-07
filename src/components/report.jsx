@@ -13,35 +13,48 @@ const Report = () => {
         <p className="para">Similar cases</p>
       </div>
       <div className="content">
-        <ol>
-          <li>XYZ vs ABC</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-          <li>EFG vs HIJ</li>
-        </ol>
+        <p>
+          Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
+          molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit
+          sed euismod. Duis in ultrices dolor, ac rhoncus odio. Suspendisse
+          tempor sollicitudin dui sed lacinia. Nulla quis enim posuere, congue
+          libero quis, commodo purus. Cras iaculis massa ut elit tempor
+          malesuada. Pellentesque dictum elit quis diam tristique, sed tincidunt
+          velit ullamcorper. Suspendisse potenti. Nam varius varius erat.
+          Aliquam pulvinar elit ut orci egestas tincidunt. Morbi ornare orci
+          ante, mollis posuere lacus accumsan sit amet. Cras ut dignissim ipsum.
+          Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
+          molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit
+          sed euismod. Duis in ultrices dolor, ac rhoncus odio. Suspendisse
+          tempor sollicitudin dui sed lacinia. Nulla quis enim posuere, congue
+          libero quis, commodo purus. Cras iaculis massa ut elit tempor
+          malesuada. Pellentesque dictum elit quis diam tristique, sed tincidunt
+          velit ullamcorper. Suspendisse potenti. Nam varius varius erat.
+          Aliquam pulvinar elit ut orci egestas tincidunt. Morbi ornare orci
+          ante, mollis posuere lacus accumsan sit amet. Cras ut dignissim ipsum.
+          Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
+          molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit
+          sed euismod. Duis in ultrices dolor, ac rhoncus odio. Suspendisse
+          tempor sollicitudin dui sed lacinia. Nulla quis enim posuere, congue
+          libero quis, commodo purus. Cras iaculis massa ut elit tempor
+          malesuada. Pellentesque dictum elit quis diam tristique, sed tincidunt
+          velit ullamcorper. Suspendisse potenti. Nam varius varius erat.
+          Aliquam pulvinar elit ut orci egestas tincidunt. Morbi ornare orci
+          ante, mollis posuere lacus accumsan sit amet. Cras ut dignissim ipsum.
+        </p>
       </div>
       <div className="reports">
         <div className="box">
           <p className="title">Winning probability</p>
-          <p>0.6</p>
+          <p>75%</p>
         </div>
         <div className="box">
           <p className="title">Compensation</p>
-          <p>$378</p>
+          <p>$10k</p>
         </div>
         <div className="box">
           <p className="title">Duration</p>
-          <p>3 Days</p>
+          <p>3 Months</p>
         </div>
       </div>
       <div className="buttons">
@@ -85,11 +98,15 @@ const Container = styled.div`
   .content {
     width: 100%;
     height: 450px;
-    padding: 20px 40px;
+    padding: 40px 35px;
     overflow-y: scroll;
     background: var(--gray);
     border-radius: 5px;
     scrollbar-width: thin;
+
+    p {
+      color: var(--dark);
+    }
 
     ::-webkit-scrollbar {
       width: 10px;
@@ -137,7 +154,7 @@ const Container = styled.div`
 
   .buttons {
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,20 +162,21 @@ const Container = styled.div`
 
     .button {
       width: 250px;
-      height: 40px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       background: var(--green);
       color: var(--white);
-      border-radius: 5px;
+      border-radius: 10px;
       cursor: pointer;
     }
 
     .create {
       width: 300px;
       height: 40px;
+      margin: 0 0 0 20px;
       display: flex;
       flex-direction: row;
       align-items: center;

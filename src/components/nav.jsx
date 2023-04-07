@@ -1,19 +1,22 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 //icons
 import { BsRocketTakeoffFill } from "react-icons/bs";
 
 const Nav = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const goHome = () => {
     navigate("/");
   };
 
   const goToProduct = () => {
-    navigate("/form");
+    if (location.pathname === "/") {
+      navigate("/form");
+    }
   };
 
   return (
@@ -23,15 +26,53 @@ const Nav = () => {
           <p>Faisala</p>
         </div>
         <div className="nav">
-          <div className="button" onClick={goToProduct}>
+          <Button onClick={goToProduct} disabled={location.pathname !== "/"}>
             <BsRocketTakeoffFill className="icon" />
             <p>Try the product</p>
-          </div>
+          </Button>
         </div>
       </div>
     </Container>
   );
 };
+
+const Button = styled.div`
+  width: 300px;
+  height: 60px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--green);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  opacity: ${(props) => (props.disabled ? "0.5" : "1")};
+
+  p {
+    color: var(--white);
+  }
+
+  .icon {
+    font-size: 1.3em;
+    margin: 0 10px 0 0;
+    color: var(--white);
+  }
+
+  :hover {
+    background: var(--green);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+    p {
+      color: var(--white);
+    }
+
+    .icon {
+      color: var(--white);
+    }
+  }
+`;
 
 const Container = styled.div`
   width: calc(100vw - 50px);
@@ -82,43 +123,6 @@ const Container = styled.div`
       .link {
         text-decoration: none;
         color: var(--black);
-      }
-
-      .button {
-        width: 300px;
-        height: 60px;
-        margin: 20px 0;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        background: var(--green);
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-
-        p {
-          color: var(--white);
-        }
-
-        .icon {
-          font-size: 1.3em;
-          margin: 0 10px 0 0;
-          color: var(--white);
-        }
-
-        :hover {
-          background: var(--green);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-
-          p {
-            color: var(--white);
-          }
-
-          .icon {
-            color: var(--white);
-          }
-        }
       }
     }
   }

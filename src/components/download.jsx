@@ -74,15 +74,16 @@ const Container = styled.div`
 
   button {
     width: 200px;
-    height: 40px;
+    height: 60px;
     border: none;
     display: flex;
+    font-size: 1em;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background: var(--blue);
+    background: var(--green);
     color: var(--white);
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
   }
 `;
