@@ -11,9 +11,8 @@ const Footer = () => {
       <div className="content">
         <div className="links">
           <a href="#" className="logo link">
-            Predixion Ai
+            Faisala
           </a>
-          <p className="link">Contact us</p>
         </div>
         <div className="icons">
           <a href="#">
