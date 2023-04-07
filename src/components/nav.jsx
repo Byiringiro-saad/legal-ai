@@ -1,24 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-
-// images
-import logo from "../assets/favicon.ico";
+import { Link, useNavigate } from "react-router-dom";
 
 const Nav = () => {
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate("/");
+  };
+
   return (
     <Container>
       <div className="content">
-        <div className="logo">
-          <img src={logo} alt="logo" />
+        <div className="logo" onClick={goHome}>
+          <p>Faisala</p>
         </div>
         <div className="nav">
-          <a href="#" className="link blue">
-            We're hiring!
-          </a>
-          <p className="link ">Join our Waitlist</p>
-          <a href="#" className="link last">
-            Resources
-          </a>
+          <Link to="/form" className="link">
+            Try it out!
+          </Link>
+          <p className="button">Sign up for Beta Access</p>
         </div>
       </div>
     </Container>
@@ -26,7 +27,7 @@ const Nav = () => {
 };
 
 const Container = styled.div`
-  width: 100%;
+  width: calc(100vw - 50px);
   height: 70px;
   display: flex;
   align-items: center;
@@ -55,6 +56,13 @@ const Container = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
+
+      p {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: var(--black);
+      }
     }
 
     .nav {
@@ -65,18 +73,17 @@ const Container = styled.div`
       align-items: center;
 
       .link {
-        margin: 0 20px;
         text-decoration: none;
         color: var(--black);
       }
 
-      .blue {
-        color: var(--blue);
-        text-decoration: underline;
-      }
-
-      .last {
-        margin: 0 0 0 20px !important;
+      .button {
+        cursor: pointer;
+        padding: 10px 20px;
+        margin: 0 0 0 20px;
+        border-radius: 5px;
+        color: var(--white);
+        background: var(--green);
       }
     }
   }

@@ -16,17 +16,32 @@ const Report = () => {
         <ol>
           <li>XYZ vs ABC</li>
           <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
+          <li>EFG vs HIJ</li>
         </ol>
       </div>
       <div className="reports">
         <div className="box">
           <p className="title">Winning probability</p>
+          <p>0.6</p>
         </div>
         <div className="box">
           <p className="title">Compensation</p>
+          <p>$378</p>
         </div>
         <div className="box">
           <p className="title">Duration</p>
+          <p>3 Days</p>
         </div>
       </div>
       <div className="buttons">
@@ -93,7 +108,7 @@ const Container = styled.div`
 
   .reports {
     width: 100%;
-    height: 80px;
+    height: 100px;
     margin: 20px 0 0 0;
     display: flex;
     flex-direction: row;
@@ -105,6 +120,9 @@ const Container = styled.div`
       border-radius: 5px;
       height: 100%;
       padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       background: var(--gray);
 
       p {
@@ -126,15 +144,15 @@ const Container = styled.div`
     justify-content: flex-end;
 
     .button {
-      width: 200px;
+      width: 250px;
       height: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      background: var(--blue);
+      background: var(--green);
       color: var(--white);
-      border-radius: 50px;
+      border-radius: 5px;
       cursor: pointer;
     }
 

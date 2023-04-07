@@ -2,123 +2,100 @@ import React from "react";
 import styled from "styled-components";
 
 // icons
-import { BsSlack, BsRocketTakeoffFill } from "react-icons/bs";
-import { TbArrowsMaximize, TbArrowDownRight } from "react-icons/tb";
+import { CiMoneyBill } from "react-icons/ci";
+import { TbArrowDownRight } from "react-icons/tb";
+import { BsRocketTakeoffFill } from "react-icons/bs";
+import { BiDollarCircle, BiTimeFive } from "react-icons/bi";
 
 // images
-import hero from "../assets/hero.png";
-import coding from "../assets/coding.jpg";
-
-// components
-import Footer from "../components/footer";
 
 const Home = () => {
   return (
     <Container>
       <div className="hero">
-        <p className="header">
-          Develop and manage enterprise grade data models, effortlessly.
-        </p>
-        <p className="para">
-          Accelerate your enterprise AI application development journey with
-          pre-built models, no code user interface and model performance assist
-          tool.
-        </p>
-        <p className="something">LOVED BY DEVELOPERS, TRUSTED BY ENTERPRISES</p>
-        <div className="button">
-          <BsSlack className="icon" />
-          <p>Join our Slack Community</p>
+        <div className="para">
+          <p className="title">Shall I file my consumer case?</p>
+          <p className="more">
+            Just help us with few key inputs and will help you decide the case
+            outcomes by analysing similar cases using our state of art AI.
+          </p>
+          <div className="button">
+            <BsRocketTakeoffFill className="icon" />
+            <p>Sign up for Beta Access</p>
+          </div>
         </div>
         <div className="image">
-          <img src={hero} alt="hero" />
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/website-storage-account.appspot.com/o/Predixion%20AI%2F1679914687757.jpeg?alt=media&token=270c4606-fb36-4963-bd6d-27df5ddde07b"
+            alt="hero"
+          />
         </div>
       </div>
       <div className="features">
-        <p className="top">AMAZING</p>
-        <p className="header">
-          Features of <span>Predixion AI</span>
-        </p>
-        <div className="container">
-          <div className="div">
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Rapid Model Development</p>
-                <p className="para">
-                  Create production-ready data models faster with Predixion AI's
-                  low-code interface.
-                </p>
-              </div>
+        <div className="about">
+          <p className="title">
+            With <span>Faisala,</span> You can:
+          </p>
+          <p className="para">
+            Our innovative product leverages advanced data analytics and machine
+            learning algorithms to predict the likely outcome of consumer cases,
+            empowering consumers to make more informed decisions.
+          </p>
+          <div className="button">
+            <BsRocketTakeoffFill className="icon" />
+            <p>Sign up for Beta Access</p>
+          </div>
+        </div>
+        <div className="content">
+          <div className="box">
+            <div className="circle">
+              <BiDollarCircle className="icon" />
             </div>
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Optimise Performance with ease</p>
-                <p className="para">
-                  Monitor and Improve your data model performance with machine
-                  powered recommendations
-                </p>
-              </div>
-            </div>
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Publish data models</p>
-                <p className="para">
-                  Start model serving directly from the application and get
-                  feedback from your friends and colleagues
-                </p>
-              </div>
+            <div className="para">
+              <p className="title">Outcome Prediction</p>
+              <p>
+                Get a probability of winning or loosing a case based on outcomes
+                of similar cases in past.
+              </p>
             </div>
           </div>
-          <div className="div">
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Pre-built and Customizable Models</p>
-                <p className="para">
-                  Get started with an existing model or build your own custom
-                  model with Predixion AI.
-                </p>
-              </div>
+          <div className="box">
+            <div className="circle">
+              <CiMoneyBill className="icon" />
             </div>
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Model experiments from your browser</p>
-                <p className="para">
-                  Save all your cloud resources and perform all heavy duty
-                  expriements directly from the browser.
-                </p>
-              </div>
+            <div className="para">
+              <p className="title">Expected Compensation</p>
+              <p>
+                Get an compensation amount for winning a case, so you can make a
+                decision is it worth your time or not.
+              </p>
             </div>
-            <div className="box">
-              <div className="circle">
-                <TbArrowsMaximize className="icon" />
-              </div>
-              <div className="text">
-                <p className="title">Visualisation and Dashboards</p>
-                <p className="para">
-                  Draw insights from our accurate graphs available to you with
-                  click on a button.
-                </p>
-              </div>
+          </div>
+          <div className="box">
+            <div className="circle">
+              <BiTimeFive className="icon" />
+            </div>
+            <div className="para">
+              <p className="title">Duration of the case</p>
+              <p>
+                Get an estimated duration of the case which help you make the
+                best decision in your interest.
+              </p>
+            </div>
+          </div>
+          <div className="box">
+            <div className="circle">
+              <BiDollarCircle className="icon" />
+            </div>
+            <div className="para">
+              <p className="title">Ready to File Court Filing</p>
+              <p>
+                Generate the case filing documents with one click and start the
+                legal process immediately.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="bigger">
-        <img src={coding} alt="hero" />
       </div>
       <div className="faq">
         <p className="title">Frequently Asked Questions</p>
@@ -127,26 +104,24 @@ const Home = () => {
             <div className="box">
               <p className="header">
                 <TbArrowDownRight className="icon" />
-                How does Predixion AI make it easier to build data models?
+                What sets Faisala apart from other legal AI?
               </p>
               <p className="para">
-                Predixion AI makes it easier to build data models by providing a
-                low code user interface that allows users to quickly and easily
-                customize pre-built models, as well as create custom models.
-                This helps data professionals save time and effort and get their
-                models up and running faster.
+                Faisala is the only legal AI that can not only predict the
+                outcomes of consumer cases with a high degree of accuracy, but
+                also generate the necessary case filing documents. This makes
+                Faisala the most comprehensive legal AI on the market.
               </p>
             </div>
             <div className="box">
               <p className="header">
                 <TbArrowDownRight className="icon" />
-                Can I use Predixion AI to create custom models?
+                How much time does it take to generate a case filing document
+                with Faisala?
               </p>
               <p className="para">
-                Yes! Predixion AI provides users with the ability to create
-                custom models from scratch using its low code user interface.
-                This makes it easy for users to create models tailored to their
-                specific needs and tasks.
+                Faisala can generate a case filing document in mere minutes,
+                making it the fastest legal AI on the market.
               </p>
             </div>
           </div>
@@ -154,24 +129,25 @@ const Home = () => {
             <div className="box">
               <p className="header">
                 <TbArrowDownRight className="icon" />
-                What features does Predixion AI have for managing data models?
+                How does Faisala accurately predict case outcomes?
               </p>
               <p className="para">
-                Predixion AI provides a comprehensive suite of features for
-                managing data models. It allows users to track their models'
-                performance over time, identify areas of improvement and quickly
-                make adjustments to keep their models running optimally.
+                Faisala uses cutting-edge artificial intelligence technology and
+                a vast database of legal precedents to accurately predict the
+                outcomes of consumer cases. This makes Faisala the most reliable
+                legal AI on the market.
               </p>
             </div>
             <div className="box">
               <p className="header">
                 <TbArrowDownRight className="icon" />
-                Does Predixion AI provide support for existing models?
+                What happens if I don't agree with Faisala's prediction?
               </p>
               <p className="para">
-                Absolutely! Predixion AI provides extensive support for existing
-                models. Its user interface allows users to easily adjust their
-                models and optimize their performance over time.
+                Faisala is designed to provide the most accurate predictions
+                possible. However, if you disagree with Faisala's prediction,
+                you are free to take your case to court and pursue other legal
+                options.
               </p>
             </div>
           </div>
@@ -179,15 +155,14 @@ const Home = () => {
       </div>
       <div className="waitlist">
         <p className="title">
-          Build and Manage Production-Ready Models Quickly and Easily with
-          Predixion AI.
+          Get the future of legal AI - Predict case outcomes, generate
+          documents, and win more cases with Faisala.
         </p>
         <div className="button">
           <BsRocketTakeoffFill className="icon" />
-          <p>Join the Waitlist</p>
+          <p>Sign up for Beta Access</p>
         </div>
       </div>
-      <Footer />
     </Container>
   );
 };
@@ -202,9 +177,11 @@ const Container = styled.div`
   .hero {
     height: auto;
     display: flex;
-    padding: 50px 20px;
-    flex-direction: column;
+    padding: 70px 20px;
+    margin: 20px 0 40px 0;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 
     @media only screen and (min-width: 1200px) {
       width: 1200px;
@@ -214,62 +191,85 @@ const Container = styled.div`
       width: 95%;
     }
 
-    p.header {
-      font-size: 3.5em;
-      margin: 10px 50px;
-      text-align: center;
-      font-weight: 700;
-      line-height: 60px;
-      color: transparent;
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-image: linear-gradient(to right, var(--tw-gradient-stops-2));
-      background-image: linear-gradient(
-        to bottom right,
-        var(--tw-gradient-stops-1)
-      );
-    }
-
-    p.para {
-      width: 70%;
-      margin: 10px 0;
-      text-align: center;
-      color: var(--black);
-    }
-
-    p.something {
-      margin: 10px 0;
-      font-weight: 700;
-      color: var(--blue);
-    }
-
-    .button {
-      margin: 10px 0;
-      padding: 15px 20px;
-      border-radius: 5px;
+    .para {
+      width: 45%;
+      height: auto;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      background: var(--blue);
-      cursor: pointer;
+      flex-direction: column;
 
-      .icon {
-        font-size: 1.2em;
-        margin: 0 10px 0 0;
-        color: var(--white);
+      p.title {
+        font-size: 3.1em;
+        font-weight: 800;
+        line-height: 70px;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(
+          to right bottom,
+          var(--tw-gradient-stops-2)
+        );
+        background-image: linear-gradient(
+          to bottom,
+          var(--tw-gradient-stops-1)
+        );
       }
 
-      p {
-        color: var(--white);
+      p.more {
+        font-size: 1.1em;
+        margin: 20px 0 0 0;
+        line-height: 30px;
+        font-weight: 500;
+        color: var(--dark);
+      }
+
+      .button {
+        width: 300px;
+        height: 60px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: var(--green);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        p {
+          color: var(--white);
+        }
+
+        .icon {
+          font-size: 1.3em;
+          margin: 0 10px 0 0;
+          color: var(--white);
+        }
+
+        :hover {
+          background: var(--green);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+          p {
+            color: var(--white);
+          }
+
+          .icon {
+            color: var(--white);
+          }
+        }
       }
     }
 
     .image {
-      width: 65%;
-      margin: 20px 0;
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img {
         width: 100%;
+        border-radius: 10px;
       }
     }
   }
@@ -277,13 +277,9 @@ const Container = styled.div`
   .features {
     height: auto;
     display: flex;
-    margin: 40px 0;
-    padding: 40px 50px 20px 50px;
-    border-radius: 5px;
-    flex-direction: column;
-    align-items: center;
-    background: #dbeafe;
-    color: var(--black);
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
 
     @media only screen and (min-width: 1200px) {
       width: 1200px;
@@ -293,92 +289,117 @@ const Container = styled.div`
       width: 95%;
     }
 
-    p.top {
-      color: var(--blue);
-    }
-
-    p.header {
-      font-size: 3em;
-      font-weight: 700;
-
-      span {
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to right, var(--tw-gradient-stops-1));
-      }
-    }
-
-    .container {
-      width: 90%;
+    .about {
+      width: 45%;
       height: auto;
-      margin: 50px 0 0 0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 50px;
+      display: flex;
+      flex-direction: column;
 
-      .div {
-        width: 100%;
-        height: auto;
+      p.title {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 0 0 20px 0;
+        color: var(--black);
+
+        span {
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          background-image: linear-gradient(
+            to right,
+            var(--tw-gradient-stops-1)
+          );
+        }
+      }
+
+      p.para {
+        font-size: 1.1em;
+        color: var(--dark);
+        line-height: 30px;
+      }
+
+      .button {
+        width: 300px;
+        height: 60px;
+        margin: 20px 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: var(--green);
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
 
-        .box {
-          width: 100%;
-          height: auto;
-          display: flex;
-          margin: 0 0 50px 0;
-          flex-direction: row;
+        p {
+          color: var(--white);
+        }
 
-          .circle {
-            width: 70px;
-            height: 50px;
-            margin: 0 10px 0 0;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--blue);
+        .icon {
+          font-size: 1.3em;
+          margin: 0 10px 0 0;
+          color: var(--white);
+        }
 
-            .icon {
-              color: var(--white);
-            }
+        :hover {
+          background: var(--green);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+          p {
+            color: var(--white);
           }
 
-          .text {
-            height: auto;
-
-            p.title {
-              font-size: 1.5em;
-              font-weight: 700;
-            }
-
-            p.para {
-              margin: 10px 0 0 0;
-            }
+          .icon {
+            color: var(--white);
           }
         }
       }
     }
-  }
 
-  .bigger {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 0;
+    .content {
+      width: 50%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
 
-    @media only screen and (min-width: 1200px) {
-      width: 1200px;
-    }
+      .box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 50px 0 0 0;
 
-    @media only screen and (max-width: 1200px) {
-      width: 95%;
-    }
+        .circle {
+          width: 150px;
+          height: 100px;
 
-    img {
-      width: 60%;
+          .icon {
+            padding: 20px;
+            font-size: 4em;
+            border-radius: 50%;
+            color: var(--green);
+            background: var(--gray);
+          }
+        }
+
+        .para {
+          width: auto;
+          height: auto;
+          padding: 10px 0 0 0;
+
+          p.title {
+            margin: 0;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--black);
+          }
+
+          p {
+            line-height: 30px;
+            margin: 10px 0 0 0;
+            color: var(--dark);
+          }
+        }
+      }
     }
   }
 
@@ -388,8 +409,8 @@ const Container = styled.div`
     border-radius: 5px;
     flex-direction: column;
     align-items: center;
-    color: var(--black);
-    margin: 40px 0;
+    margin: 40px 0 0 0;
+    padding: 0 20px;
 
     @media only screen and (min-width: 1200px) {
       width: 1200px;
@@ -400,13 +421,14 @@ const Container = styled.div`
     }
 
     .title {
-      font-size: 3em;
+      font-size: 2.5em;
       font-weight: 700;
-      margin: 0 0 40px 0;
+      margin: 0 0 50px 0;
+      color: var(--black);
     }
 
     .container {
-      width: 90%;
+      width: 100%;
       height: auto;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -420,24 +442,27 @@ const Container = styled.div`
 
         .box {
           width: 100%;
-          height: auto;
+          height: 180px;
           display: flex;
-          margin: 0 0 40px 0;
+          margin: 0 0 70px 0;
           flex-direction: column;
 
           p.header {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-weight: 700;
+            color: var(--black);
 
             .icon {
               font-size: 1.6em;
               margin: 0 5px -7px 0;
-              color: var(--blue);
+              color: var(--green);
             }
           }
 
           p.para {
-            margin: 10px 0 0 0;
+            margin: 20px 0 0 0;
+            line-height: 30px;
+            color: var(--dark);
           }
         }
       }
@@ -451,16 +476,17 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    padding: 20px 30px;
-    background: var(--blue);
+    padding: 30px 0 10px 0;
+    background: var(--green);
     border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 
     @media only screen and (min-width: 1200px) {
-      width: 800px;
+      width: 1200px;
     }
 
     @media only screen and (max-width: 1200px) {
-      width: 70%;
+      width: 95%;
     }
 
     p.title {
@@ -482,15 +508,29 @@ const Container = styled.div`
       border-radius: 10px;
       background: var(--white);
       cursor: pointer;
+      transition: 0.3s ease-in-out;
 
       p {
-        color: var(--blue);
+        color: var(--green);
       }
 
       .icon {
         font-size: 1.3em;
         margin: 0 10px 0 0;
-        color: var(--blue);
+        color: var(--green);
+      }
+
+      :hover {
+        background: var(--green);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+        p {
+          color: var(--white);
+        }
+
+        .icon {
+          color: var(--white);
+        }
       }
     }
   }

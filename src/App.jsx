@@ -5,11 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Form from "./pages/form";
 
-//components
-import Nav from "./components/nav";
+// Sub-pages
 import TypeForm from "./components/form";
 import Report from "./components/report";
 import Download from "./components/download";
+
+//components
+import Nav from "./components/nav";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route path="download" element={<Download />} />
         </Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }

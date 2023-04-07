@@ -32,7 +32,7 @@ const Footer = () => {
 };
 
 const Container = styled.div`
-  width: 100%;
+  width: calc(100vw - 50px);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@ const Container = styled.div`
       }
 
       p {
-        color: var(--blue);
+        color: var(--green);
       }
     }
 
@@ -89,7 +89,7 @@ const Container = styled.div`
         }
 
         .blue {
-          color: var(--blue);
+          color: var(--green);
         }
 
         .icon {

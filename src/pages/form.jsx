@@ -11,7 +11,11 @@ const Form = () => {
 };
 
 const Container = styled.div`
-  padding: 0 20px;
+  height: auto;
+  display: flex;
+  padding: 50px 20px;
+  align-items: center;
+  justify-content: center;
 
   @media only screen and (min-width: 1200px) {
     width: 1200px;
