@@ -220,6 +220,14 @@ const Container = styled.div`
       text-align: center;
       font-weight: 700;
       line-height: 60px;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, var(--tw-gradient-stops-2));
+      background-image: linear-gradient(
+        to bottom right,
+        var(--tw-gradient-stops-1)
+      );
     }
 
     p.para {
@@ -292,6 +300,13 @@ const Container = styled.div`
     p.header {
       font-size: 3em;
       font-weight: 700;
+
+      span {
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, var(--tw-gradient-stops-1));
+      }
     }
 
     .container {
