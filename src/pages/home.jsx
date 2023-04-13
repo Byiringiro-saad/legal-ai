@@ -28,7 +28,7 @@ const Home = () => {
           </p>
           <div className="button" onClick={goToProduct}>
             <BsRocketTakeoffFill className="icon" />
-            <p>Try the product</p>
+            <p>Try for free</p>
           </div>
         </div>
         <div className="image">
@@ -196,6 +196,7 @@ const Container = styled.div`
 
     @media only screen and (max-width: 1200px) {
       width: 100%;
+      flex-direction: column;
     }
 
     @media only screen and (max-width: 480px) {
@@ -211,6 +212,7 @@ const Container = styled.div`
 
       @media only screen and (max-width: 1024px) {
         width: 90%;
+        align-items: center;
       }
 
       @media only screen and (max-width: 480px) {
@@ -233,6 +235,10 @@ const Container = styled.div`
           var(--tw-gradient-stops-1)
         );
 
+        @media only screen and (max-width: 1024px) {
+          text-align: center;
+        }
+
         @media only screen and (max-width: 480px) {
           text-align: center;
           font-size: 2.5em;
@@ -246,7 +252,7 @@ const Container = styled.div`
         font-weight: 500;
         color: var(--dark);
 
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 1024px) {
           text-align: center;
         }
       }
@@ -297,7 +303,7 @@ const Container = styled.div`
       justify-content: center;
 
       @media only screen and (max-width: 1024px) {
-        display: none;
+        width: 100%;
       }
 
       img {
