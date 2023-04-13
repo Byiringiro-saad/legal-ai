@@ -12,7 +12,7 @@ const Report = () => {
         <p className="title">Here is what you can expect</p>
         <p className="para">Similar cases</p>
       </div>
-      <div className="content">
+      <div className="container">
         <p>
           Donec dictum tristique porta. Etiam convallis lorem lobortis nulla
           molestie, nec tincidunt ex ullamcorper. Quisque ultrices lobortis elit
@@ -77,6 +77,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
+  @media only screen and (max-width: 786px) {
+    align-items: center;
+  }
+
   .header {
     width: 100%;
     height: 100px;
@@ -84,6 +88,14 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    @media only screen and (max-width: 786px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
 
     p {
       color: var(--black);
@@ -95,7 +107,7 @@ const Container = styled.div`
     }
   }
 
-  .content {
+  .container {
     width: 100%;
     height: 450px;
     padding: 40px 35px;
@@ -103,6 +115,14 @@ const Container = styled.div`
     background: var(--gray);
     border-radius: 5px;
     scrollbar-width: thin;
+
+    @media only screen and (max-width: 786px) {
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
 
     p {
       color: var(--dark);
@@ -132,6 +152,13 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media only screen and (max-width: 786px) {
+      width: 95%;
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: flex-start;
+    }
+
     .box {
       width: 30%;
       border-radius: 5px;
@@ -141,6 +168,15 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: space-around;
       background: var(--gray);
+
+      @media only screen and (max-width: 786px) {
+        width: 45%;
+        margin: 0 20px 20px 0;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 95%;
+      }
 
       p {
         color: var(--black);
@@ -160,6 +196,14 @@ const Container = styled.div`
     align-items: center;
     justify-content: flex-end;
 
+    @media only screen and (max-width: 786px) {
+      width: 95%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+
     .button {
       width: 250px;
       height: 60px;
@@ -171,6 +215,10 @@ const Container = styled.div`
       color: var(--white);
       border-radius: 10px;
       cursor: pointer;
+
+      @media only screen and (max-width: 480px) {
+        margin: 0 0 30px 0;
+      }
     }
 
     .create {

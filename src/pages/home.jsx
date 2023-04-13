@@ -195,7 +195,12 @@ const Container = styled.div`
     }
 
     @media only screen and (max-width: 1200px) {
-      width: 95%;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 480px) {
+      padding: 70px 10px;
+      justify-content: center;
     }
 
     .para {
@@ -203,6 +208,14 @@ const Container = styled.div`
       height: auto;
       display: flex;
       flex-direction: column;
+
+      @media only screen and (max-width: 1024px) {
+        width: 90%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        align-items: center;
+      }
 
       p.title {
         font-size: 3.1em;
@@ -219,6 +232,11 @@ const Container = styled.div`
           to bottom,
           var(--tw-gradient-stops-1)
         );
+
+        @media only screen and (max-width: 480px) {
+          text-align: center;
+          font-size: 2.5em;
+        }
       }
 
       p.more {
@@ -227,6 +245,10 @@ const Container = styled.div`
         line-height: 30px;
         font-weight: 500;
         color: var(--dark);
+
+        @media only screen and (max-width: 480px) {
+          text-align: center;
+        }
       }
 
       .button {
@@ -274,6 +296,10 @@ const Container = styled.div`
       align-items: center;
       justify-content: center;
 
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+
       img {
         width: 100%;
         border-radius: 10px;
@@ -296,17 +322,29 @@ const Container = styled.div`
       width: 95%;
     }
 
+    @media only screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .about {
       width: 45%;
       height: auto;
       display: flex;
       flex-direction: column;
 
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+
       p.title {
         font-size: 2em;
         font-weight: 700;
         margin: 0 0 20px 0;
         color: var(--black);
+
+        @media only screen and (max-width: 480px) {
+          font-size: 1.7em;
+        }
 
         span {
           color: transparent;
@@ -369,6 +407,10 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
 
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
+      }
+
       .box {
         width: 100%;
         height: auto;
@@ -378,6 +420,10 @@ const Container = styled.div`
         .circle {
           width: 150px;
           height: 100px;
+
+          @media only screen and (max-width: 480px) {
+            margin: 0 10px 0 0;
+          }
 
           .icon {
             padding: 20px;
@@ -398,6 +444,10 @@ const Container = styled.div`
             font-size: 1.5em;
             font-weight: 700;
             color: var(--black);
+
+            @media only screen and (max-width: 480px) {
+              font-size: 1.2em;
+            }
           }
 
           p {
@@ -432,6 +482,10 @@ const Container = styled.div`
       font-weight: 700;
       margin: 0 0 50px 0;
       color: var(--black);
+
+      @media only screen and (max-width: 480px) {
+        font-size: 1.7em;
+      }
     }
 
     .container {
@@ -440,6 +494,11 @@ const Container = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 50px;
+
+      @media only screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+      }
 
       .div {
         width: 100%;
@@ -453,6 +512,16 @@ const Container = styled.div`
           display: flex;
           margin: 0 0 70px 0;
           flex-direction: column;
+
+          @media only screen and (max-width: 1024px) {
+            height: 250px;
+            margin: 0 0 0 0;
+          }
+
+          @media only screen and (max-width: 480px) {
+            height: auto;
+            margin: 0 0 50px 0;
+          }
 
           p.header {
             font-size: 1.3em;
@@ -494,6 +563,10 @@ const Container = styled.div`
 
     @media only screen and (max-width: 1200px) {
       width: 95%;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      padding: 30px;
     }
 
     p.title {

@@ -50,6 +50,11 @@ const Button = styled.div`
   transition: 0.3s ease-in-out;
   opacity: ${(props) => (props.disabled ? "0.5" : "1")};
 
+  @media only screen and (max-width: 480px) {
+    width: auto;
+    padding: 5px 10px;
+  }
+
   p {
     color: var(--white);
   }
@@ -82,6 +87,10 @@ const Container = styled.div`
   justify-content: center;
   border-bottom: 1px solid var(--gray);
 
+  @media only screen and (max-width: 480px) {
+    width: calc(100vw - 5px);
+  }
+
   .content {
     height: 100%;
     padding: 0 20px;
@@ -90,12 +99,16 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media only screen and (max-width: 480px) {
+      padding: 0 5px 0 10px;
+    }
+
     @media only screen and (min-width: 1200px) {
       width: 1200px;
     }
 
     @media only screen and (max-width: 1200px) {
-      width: 95%;
+      width: 100%;
     }
 
     .logo {
