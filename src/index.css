@@ -28,3 +28,9 @@ body {
   scroll-behavior: smooth;
   font-family: "Inter", sans-serif;
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: block;
+  }
+}
