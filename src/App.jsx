@@ -9,6 +9,7 @@ import Form from "./pages/form";
 import Login from "./pages/auth/login";
 import Report from "./components/report";
 import TypeForm from "./components/form";
+import Signup from "./pages/auth/signup";
 import Download from "./components/download";
 
 //components
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/form" element={<Form />}>
           <Route path="" element={<TypeForm />} />
           <Route path="report" element={<Report />} />
