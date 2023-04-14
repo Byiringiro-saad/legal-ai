@@ -84,6 +84,16 @@ const Container = styled.div`
       height: 700px;
       margin: 0 40px 0 0;
       background: var(--gray);
+
+      @media only screen and (max-width: 1024px) {
+        width: 95%;
+        height: 300px;
+        margin: 0 0 30px 0;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+      }
     }
 
     .content {
@@ -92,6 +102,18 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @media only screen and (max-width: 1024px) {
+        width: 75%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        width: 100%;
+      }
 
       .header {
         width: 100%;
@@ -153,6 +175,10 @@ const Container = styled.div`
         flex-direction: column;
         align-items: center;
 
+        @media only screen and (max-width: 1024px) {
+          width: 100%;
+        }
+
         .input {
           width: 100%;
           height: 80px;
@@ -181,6 +207,11 @@ const Container = styled.div`
           align-items: center;
           justify-content: space-between;
 
+          @media only screen and (max-width: 480px) {
+            width: 100%;
+            height: 70px;
+          }
+
           .remember {
             display: flex;
             flex-direction: row;
@@ -188,6 +219,11 @@ const Container = styled.div`
             input {
               width: 18px;
               margin: 0 5px 0 0;
+
+              @media only screen and (max-width: 480px) {
+                width: 20px;
+                margin: 0 10px 0 0;
+              }
             }
           }
 
