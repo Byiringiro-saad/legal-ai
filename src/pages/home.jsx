@@ -36,9 +36,12 @@ const Home = () => {
           </div>
         </div>
         <div className="image">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/website-storage-account.appspot.com/o/Predixion%20AI%2F1679914687757.jpeg?alt=media&token=270c4606-fb36-4963-bd6d-27df5ddde07b"
+          <video
+            src="https://res.cloudinary.com/f-studios/video/upload/v1681455645/Predixion/Legal_ai/Faisala_product_intro_w0s5ie.mp4"
             alt="hero"
+            autoPlay={true}
+            loop
+            controls
           />
         </div>
       </div>
@@ -306,13 +309,13 @@ const Container = styled.div`
       align-items: center;
       justify-content: center;
 
-      @media only screen and (max-width: 1024px) {
-        width: 100%;
-      }
-
-      img {
+      video {
         width: 100%;
         border-radius: 10px;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        width: 100%;
       }
     }
   }
