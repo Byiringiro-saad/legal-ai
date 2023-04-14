@@ -17,6 +17,10 @@ const Home = () => {
     navigate("/form");
   };
 
+  const goToLogin = () => {
+    navigate("/login");
+  };
+
   return (
     <Container>
       <div className="hero">
@@ -26,7 +30,7 @@ const Home = () => {
             Just help us with few key inputs and will help you decide the case
             outcomes by analysing similar cases using our state of art AI.
           </p>
-          <div className="button" onClick={goToProduct}>
+          <div className="button" onClick={goToLogin}>
             <BsRocketTakeoffFill className="icon" />
             <p>Try for free</p>
           </div>

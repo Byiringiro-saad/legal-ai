@@ -6,8 +6,9 @@ import Home from "./pages/home";
 import Form from "./pages/form";
 
 // Sub-pages
-import TypeForm from "./components/form";
+import Login from "./pages/auth/login";
 import Report from "./components/report";
+import TypeForm from "./components/form";
 import Download from "./components/download";
 
 //components
@@ -20,6 +21,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/form" element={<Form />}>
           <Route path="" element={<TypeForm />} />
           <Route path="report" element={<Report />} />
