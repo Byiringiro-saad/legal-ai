@@ -172,9 +172,9 @@ const Home = () => {
           Get the future of legal AI - Predict case outcomes, generate
           documents, and win more cases with Faisala.
         </p>
-        <div className="button" onClick={goToProduct}>
+        <div className="button" onClick={goToLogin}>
           <BsRocketTakeoffFill className="icon" />
-          <p>Try the product</p>
+          <p>Try for free</p>
         </div>
       </div>
     </Container>
